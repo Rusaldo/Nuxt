@@ -1,0 +1,22 @@
+{
+  "name": "broker",
+  "version": "1.0.0",
+  "description": "Credit company brochure Nuxt website",
+  "author": "Ruslan Yandiev",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.2.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}
