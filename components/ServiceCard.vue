@@ -1,8 +1,16 @@
 <template>
-  <article class="service-card">
-    <h3 class="service-card__title">{{ service.title }}</h3>
-    <BaseButton>Подробнее</BaseButton>
-  </article>
+  <a class="service-card" :href="service.url">
+    <div class="service-card__icon">
+      Icon
+    </div>
+    <div class="service-card__title">
+      {{ service.title }}
+    </div>
+    <div class="service-card__description">
+      {{ service.description }}
+    </div>
+<!--    <BaseButton>Подробнее</BaseButton>-->
+  </a>
 </template>
 
 <script>
@@ -21,19 +29,32 @@ export default {
 
 <style lang="scss" scoped>
   .service-card {
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(10,36,59,.27);
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 480px;
+    padding: 30px 18px;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    transition: transform .2s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &__icon {
+      color: var(--accent-color);
+      margin-bottom: 30px;
+    }
 
     &__title {
-      padding-top: 12px;
+      color: var(--primary-color);
+      font-size: 24px;
+      font-weight: 600;
       margin-bottom: 18px;
+    }
+
+    &__description {
+      margin-bottom: 36px;
+      color: #57667e;
+      font-size: 16px;
     }
   }
 </style>

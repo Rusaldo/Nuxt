@@ -1,6 +1,6 @@
 <template>
   <div class="footer-about">
-    <Logo class="footer-about__logo" />
+    <Logo class="footer-about__logo" light />
     <p class="footer-about__text">
       Кредитный, ипотечный брокер: помощь в получении кредита и ипотеки
     </p>
@@ -21,11 +21,12 @@
   .footer-about {
 
     &__logo {
-      margin-bottom: 12px;
+      margin-bottom: 30px;
     }
 
     &__text {
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 1.8;
     }
   }
 </style>

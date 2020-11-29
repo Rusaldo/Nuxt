@@ -1,6 +1,6 @@
 <template>
   <button class="base-button"
-         :class="classObject"
+         :class="classes"
          :type="nativeType"
          v-on="$listeners">
     <slot />
@@ -10,7 +10,8 @@
 <script>
 export default {
   props: {
-    type: String,
+    variant: String,
+    block: Boolean,
     nativeType: {
       type: String,
       default: 'button',
@@ -18,18 +19,16 @@ export default {
         return ['submit', 'button', 'reset'].indexOf(value) !== -1
       }
     },
-    expanded: Boolean,
-    outlined: Boolean
   },
 
   computed: {
-    classObject() {
-      return {
-        'base-button--primary': this.type === 'primary',
-        'base-button--outlined': this.outlined,
-        'base-button--expanded': this.expanded
-
-      }
+    classes() {
+      return [
+        this.variant ? 'base-button--' + this.variant : '',
+        {
+          'base-button--block': this.block
+        }
+      ]
     }
   }
 }
@@ -41,46 +40,37 @@ export default {
     align-items: center;
     justify-content: center;
     height: 50px;
-    padding: 0 18px;
+    padding: 0 36px;
     background: transparent;
-    border: none;
-    border-radius: 4px;
     text-align: center;
     white-space: nowrap;
     transition: .2s;
+    text-transform: uppercase;
     font-size: 16px;
-    border: 2px solid var(--border-color);
+    font-weight: 500;
+    color: white;
+    border: none;
     cursor: pointer;
+    outline: none;
 
-    &:hover {
-      border-color: var(--border-hover-color);
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
+
+    &:active {
+      opacity: .5;
     }
 
     &--primary {
-      background: var(--primary-color);
-      color: var(--text-white-color);
-      border-color: transparent;
-
-      &:hover {
-        background: var(--primary-light-color);
-        border-color: transparent;
-      }
+      background-color: var(--primary-color);
     }
 
-    &--primary.base-button--outlined {
-      background: transparent;
-      border-color: var(--primary-color);
-      color: var(--primary-color);
-
-      &:hover {
-        background: var(--primary-color);
-        color: var(--text-white-color);
-      }
+    &--accent {
+      background-color: var(--accent-color);
     }
 
-    &
-
-    &--expanded {
+    &--block {
       width: 100%;
     }
   }

@@ -1,6 +1,7 @@
 <template>
-  <section class="section services">
+  <section class="section section--bg-gray services">
     <div class="container">
+      <SectionTitle>Услуги</SectionTitle>
       <ul class="services__list">
         <ServiceCard v-for="service in services"
                      :key="service.id"
@@ -11,10 +12,12 @@
 </template>
 
 <script>
+import SectionTitle from '~/components/SectionTitle.vue'
 import ServiceCard from '~/components/ServiceCard.vue'
 
 export default {
   components: {
+    SectionTitle,
     ServiceCard
   },
 
@@ -23,32 +26,38 @@ export default {
       services: [
         {
           id: '1',
-          title: 'Потребительский кредит (кредит наличными)',
+          title: 'Потребительский кредит',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vitae?',
           url: '#'
         },
         {
           id: '2',
           title: 'Ипотечное кредитование',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vitae?',
           url: '#'
         },
         {
           id: '3',
           title: 'Кредит под залог автомобиля',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vitae?',
           url: '#'
         },
         {
           id: '4',
           title: 'Кредит под залог недвижимости',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vitae?',
           url: '#'
         },
         {
           id: '5',
           title: 'Кредит для бизнеса',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vitae?',
           url: '#'
         },
         {
           id: '6',
           title: 'Рефинансирование кредита',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vitae?',
           url: '#'
         }
       ]
@@ -62,18 +71,18 @@ export default {
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 100%;
+      gap: 50px;
       grid-auto-rows: auto;
-      gap: 30px;
       justify-content: center;
 
       @include tablet {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @include tablet-small {
-        grid-template-columns: auto;
-        gap: 18px;
+      @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
       }
     }
   }

@@ -18,8 +18,6 @@ export default {
 
 <style lang="scss" scoped>
   .apply {
-    background: var(--primary-lightest-color);
-
     &__form {
       margin: 0 auto;
     }

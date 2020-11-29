@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <TopBar class="app__top-bar" />
     <Header class="app__header" />
 
     <main class="app__main">
@@ -12,17 +13,19 @@
 </template>
 
 <script>
-  import Header from '~/components/Header.vue'
-  import Footer from '~/components/Footer.vue'
-  import ModalRoot from '~/components/modal/ModalRoot.vue'
+import TopBar from '~/components/layout/TopBar/TopBar.vue'
+import Header from '~/components/layout/Header/Header.vue'
+import Footer from '~/components/layout/Footer/Footer.vue'
+import ModalRoot from '~/components/modal/ModalRoot.vue'
 
-  export default {
-    components: {
-      Header,
-      Footer,
-      ModalRoot
-    }
+export default {
+  components: {
+    TopBar,
+    Header,
+    Footer,
+    ModalRoot
   }
+}
 </script>
 
 <style>

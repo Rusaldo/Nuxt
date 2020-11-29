@@ -1,6 +1,7 @@
 <template>
   <section class="section features">
     <div class="container">
+      <SectionTitle>Наши преимущества</SectionTitle>
       <ul class="features__list">
         <li class="features__feature">
           <div class="features__icon">📉</div>
@@ -31,12 +32,22 @@
   </section>
 </template>
 
+<script>
+import SectionTitle from '~/components/SectionTitle.vue'
+
+export default {
+  components: {
+    SectionTitle
+  }
+}
+</script>
+
 <style lang="scss" scoped>
   .features {
 
     &__list {
+      grid-template-columns: 100%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: auto;
       gap: 24px;
 
@@ -44,27 +55,27 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @include mobile {
-        grid-template-columns: 100%;
+      @include desktop {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
     &__feature {
       text-align: center;
-      font-size: 20px;
+      font-size: 16px;
 
-      @include mobile {
-        font-size: 16px;
+      @include tablet {
+        font-size: 20px;
       }
     }
 
     &__icon {
-      font-size: 40px;
-      margin-bottom: 12px;
+      font-size: 30px;
+      margin-bottom: 6px;
 
-      @include mobile {
-        font-size: 30px;
-        margin-bottom: 6px;
+      @include tablet {
+        font-size: 40px;
+        margin-bottom: 12px;
       }
     }
   }

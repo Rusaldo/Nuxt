@@ -1,26 +1,41 @@
 <template>
-  <div class="logo">
-    <nuxt-link to="/" class="logo__link">
-      Broker<span class="logo__dot">.</span>
-    </nuxt-link>
-  </div>
+  <nuxt-link class="logo" :class="{ 'logo--light': light }" to="/">
+    Basis
+  </nuxt-link>
 </template>
+
+<script>
+export default {
+  props: {
+    light: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
   .logo {
-    display: flex;
-    align-items: flex-end;
+    display: inline-flex;
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
 
-    &__link {
-      font-size: 22px;
-      font-weight: 500;
-      color: var(--primary-color);
-      text-transform: uppercase;
+    &::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 30px;
+      background-color: var(--accent-color);
+      margin-top: auto;
+      margin-bottom: 6px;
+      margin-left: 2px;
     }
 
-    &__dot {
-      line-height: 0;
-      font-size: 35px;
+    &--light {
+      color: #fff;
     }
   }
 </style>
