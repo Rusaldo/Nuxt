@@ -8,7 +8,7 @@
             Кредитный, ипотечный брокер: помощь в получении кредита и ипотеки
           </p>
         </div>
-        <FooterNav />
+<!--        <FooterNav />-->
         <div class="footer__contacts">
           <address class="footer__contact">
             <a class="footer__contact-link footer__contact-link--phone" href="tel:+79253292121">+7 (925) 329-2121</a>
