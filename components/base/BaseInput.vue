@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
   .base-input {
+    width: 100%;
 
     &__input {
       -webkit-appearance: none;

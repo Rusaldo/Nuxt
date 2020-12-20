@@ -2,7 +2,6 @@
   <form ref="form"
         class="apply-form"
         name="apply"
-        data-netlify=true
         @submit.prevent="handleSubmit" >
 <!--    <h2 class="apply-form__title">Оформить заявку на кредит</h2>-->
     <p class="apply-form__text">Наш менеджер поможет ответить на все интересующие вопросы</p>
@@ -20,11 +19,12 @@
                    placeholder="Номер телефона" />
       </div>
       <div class="apply-form__field">
-        <BaseButton variant="accent" native-type="submit">Отправить заявку</BaseButton>
+        <BaseButton variant="accent" native-type="submit" block>Отправить заявку</BaseButton>
       </div>
     </div>
     <p class="apply-form__assent">
-      &#128221; Я даю согласие ООО «Русалдо» на обработку моих <br> <a class="apply-form__link" href="#">персональных данных</a>
+      Нажимая кнопку «Отправить заявку» вы принимаете <br>
+      условия передачи персональных данных.
     </p>
   </form>
 </template>
@@ -33,6 +33,7 @@
 import BaseInput from '~/components/base/BaseInput.vue'
 import BaseButton from '~/components/base/BaseButton.vue'
 import ApplySuccess from '~/components/ApplySuccess.vue'
+import IconContract from '~/components/icons/IconContract'
 import ModalBus from '~/plugins/modalBus'
 
 export default {
@@ -41,7 +42,8 @@ export default {
   components: {
     BaseInput,
     BaseButton,
-    ApplySuccess
+    ApplySuccess,
+    IconContract
   },
 
   data() {
@@ -53,6 +55,8 @@ export default {
 
   methods: {
     handleSubmit() {
+      this.onSuccess()
+      return
       if (!this.validate()) return
       const form = this.$refs.form
       console.log(form)
@@ -92,8 +96,9 @@ export default {
 
 <style lang="scss" scoped>
   .apply-form {
-    max-width: 460px;
+    max-width: 440px;
     text-align: center;
+    margin: 0 auto;
 
     &__title {
       margin-bottom: 18px;
@@ -122,6 +127,13 @@ export default {
 
     &__link {
       text-decoration: underline;
+    }
+
+    &__icon {
+      width: 1.2em;
+      height: 1.2em;
+      vertical-align: middle;
+      margin-right: 6px;
     }
   }
 

@@ -4,6 +4,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -12,7 +13,7 @@ html {
   --primary-lightest-color: #9de1df;
   --accent-color: #FF6600;
   --secondary-color: #0d2d3e;
-  --default-text-color: #57667e;;
+  --default-text-color: #57667e;
   --text-color: #0e132a;
   --text-light-color: #f5f5f5;
   --text-dark-color: #363636;
@@ -66,6 +67,10 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 18px;
+
+  @include tablet {
+    padding: 0 30px;
+  }
 }
 
 .section {

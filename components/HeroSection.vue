@@ -2,7 +2,7 @@
   <section class="section hero">
     <div class="container hero__container">
       <div class="hero__sub-heading">
-        Commited to success
+        Кредитный брокер
       </div>
       <div class="hero__heading">
         Помогаем получать <br>
@@ -13,7 +13,8 @@
       </div>
       <BaseButton class="hero__btn"
                   variant="accent"
-                  @click="openApplyModal">
+                  tag="a"
+                  href="#apply">
         Оставить заявку
       </BaseButton>
     </div>
@@ -44,13 +45,18 @@ export default {
 
 <style lang="scss" scoped>
   .hero {
-    min-height: calc(100vh - 111px);
+    min-height: calc(100vh - 61px);
     background-image: url(https://preview.colorlib.com/theme/consultingbiz/assets/img/hero/xh1_hero.jpg.pagespeed.ic.Sn2ey8kriY.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: center;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
 
     @include laptop {
       height: 900px;
@@ -58,16 +64,23 @@ export default {
 
     &__container {
       flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include tablet {
+        align-items: flex-start;
+      }
     }
 
     &__sub-heading {
       font-size: 15px;
       position: relative;
-      padding-left: 68px;
       color: var(--accent-color);
       text-transform: uppercase;
       margin-bottom: 24px;
       font-weight: 500;
+      padding-bottom: 24px;
 
       &::before {
         content: '';
@@ -75,12 +88,20 @@ export default {
         width: 54px;
         height: 2px;
         background: var(--accent-color);
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include tablet {
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
 
       @include tablet {
+        padding-left: 68px;
+        padding-bottom: 0;
         font-size: 18px;
       }
     }

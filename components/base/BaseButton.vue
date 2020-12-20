@@ -1,10 +1,11 @@
 <template>
-  <button class="base-button"
-         :class="classes"
-         :type="nativeType"
-         v-on="$listeners">
+  <component :is="tag" class="base-button"
+             :class="classes"
+             :type="nativeType"
+             v-bind="$attrs"
+             v-on="$listeners">
     <slot />
-  </button>
+  </component>
 </template>
 
 <script>
@@ -19,6 +20,10 @@ export default {
         return ['submit', 'button', 'reset'].indexOf(value) !== -1
       }
     },
+    tag: {
+      type: String,
+      default: 'button'
+    }
   },
 
   computed: {

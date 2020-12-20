@@ -54,11 +54,11 @@ export default {
       gap: 60px 30px;
 
       @include tablet {
-        grid-template-columns: repeat(2, 1fr);
         gap: 60px;
       }
 
       @include laptop {
+        grid-template-columns: repeat(2, 1fr);
         gap: 90px 60px;
       }
     }
@@ -67,7 +67,7 @@ export default {
       display: grid;
       grid-template-columns: auto auto;
       grid-auto-rows: auto;
-      column-gap: 18px;
+      column-gap: 24px;
 
       @include laptop {
         column-gap: 30px;
@@ -75,12 +75,13 @@ export default {
     }
 
     &__icon {
-      width: 56px;
-      height: 56px;
+      width: 42px;
+      height: 42px;
       font-size: 30px;
       margin-bottom: 6px;
       grid-row: 1 / 3;
       color: var(--primary-color);
+      margin-top: 6px;
 
       @include tablet {
         font-size: 40px;

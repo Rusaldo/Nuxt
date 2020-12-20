@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <TopBar class="app__top-bar" />
+<!--    <TopBar class="app__top-bar" />-->
     <Header class="app__header" />
 
     <main class="app__main">

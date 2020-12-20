@@ -1,5 +1,5 @@
 <template>
-  <div class="section apply">
+  <div class="section apply" id="apply">
     <div class="container">
       <SectionTitle center>Оформить заявку на кредит</SectionTitle>
       <ApplyForm class="apply__form" />

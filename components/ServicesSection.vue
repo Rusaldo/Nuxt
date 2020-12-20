@@ -11,9 +11,9 @@
           </h3>
           <div class="services__description">
             <ul>
-              <li>На любые цели</li>
-              <li>Ставки от 6%</li>
-              <li>Сумма до 10 млн руб</li>
+              <li class="services__list-item">На любые цели</li>
+              <li class="services__list-item">Ставки от 6%</li>
+              <li class="services__list-item">Сумма до 10 млн руб</li>
             </ul>
           </div>
         </li>
@@ -25,11 +25,13 @@
             Рефинансирование
           </h3>
           <div class="services__description">
-            <p>Объединим несколько кредитов в один</p>
-            <p>Уменьшим ставку по действующему кредиту с возможностью получения дополнительной суммы</p>
-            <p>Самые выгодные условия на рынке</p>
-            <p>Быстрое рассмотрение заявки</p>
-            <p>Минимальный пакет документов</p>
+            <ul>
+              <li class="services__list-item">Объединим несколько кредитов в один</li>
+              <li class="services__list-item">Уменьшим ставку по действующему кредиту с возможностью получения дополнительной суммы</li>
+              <li class="services__list-item">Самые выгодные условия на рынке</li>
+              <li class="services__list-item">Быстрое рассмотрение заявки</li>
+              <li class="services__list-item">Минимальный пакет документов</li>
+            </ul>
           </div>
         </li>
 
@@ -41,29 +43,27 @@
           </h3>
           <div class="services__description">
             <ul>
-              <li>Льготные программы ипотечного кредитования</li>
-              <li>Выгодные ставки от 5%</li>
-              <li>До 30 млн руб.</li>
-              <li>Возможность получения ипотеки без первоначального взноса</li>
+              <li class="services__list-item">Льготные программы ипотечного кредитования</li>
+              <li class="services__list-item">Выгодные ставки от 5%</li>
+              <li class="services__list-item">До 30 млн руб.</li>
+              <li class="services__list-item">Возможность получения ипотеки без первоначального взноса</li>
             </ul>
           </div>
         </li>
 
 
         <li class="services__card">
-          <div class="services__icon">
-            Icon
-          </div>
+          <IconDollar class="services__icon" />
           <h3 class="services__heading">
             Залоговое финансирование
           </h3>
           <div class="services__description">
             <ul>
-              <li>Без подтверждения цели кредита</li>
-              <li>Под залог недвижимости или транспортного средства</li>
-              <li>Гибкие условия кредитования</li>
-              <li>Сумма до 15 млн руб.</li>
-              <li>Комфортный срок от 1 года до 20 лет</li>
+              <li class="services__list-item">Без подтверждения цели кредита</li>
+              <li class="services__list-item">Под залог недвижимости или транспортного средства</li>
+              <li class="services__list-item">Гибкие условия кредитования</li>
+              <li class="services__list-item">Сумма до 15 млн руб.</li>
+              <li class="services__list-item">Комфортный срок от 1 года до 20 лет</li>
             </ul>
           </div>
         </li>
@@ -98,7 +98,7 @@ export default {
       grid-auto-rows: auto;
       justify-content: center;
 
-      @include tablet {
+      @include laptop {
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
       }
@@ -140,6 +140,18 @@ export default {
 
       @include tablet {
         font-size: 18px;
+      }
+    }
+
+    &__list-item {
+      &::before {
+        content: '—';
+        margin-right: 6px;
+        color: var(--primary-color);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
       }
     }
   }
