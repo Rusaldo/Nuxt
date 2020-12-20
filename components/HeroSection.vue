@@ -46,7 +46,7 @@ export default {
 <style lang="scss" scoped>
   .hero {
     min-height: calc(100vh - 61px);
-    background-image: url(https://preview.colorlib.com/theme/consultingbiz/assets/img/hero/xh1_hero.jpg.pagespeed.ic.Sn2ey8kriY.webp);
+    background-image: url('/hero.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
