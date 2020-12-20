@@ -1,17 +1,36 @@
 <template>
-  <h3 class="section-title">
+  <h2 class="section-title" :class="{ 'section-title--center': center }">
     <slot />
-  </h3>
+  </h2>
 </template>
+
+<script>
+export default {
+  props: {
+    center: Boolean
+  }
+}
+</script>
 
 <style lang="scss" scoped>
   .section-title {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #092c3f;
     position: relative;
-    padding-left: 68px;
+    text-align: center;
+    padding-bottom: 18px;
+
+    @include tablet {
+      margin-bottom: 50px;
+
+      &:not(.section-title--center) {
+        text-align: left;
+        padding-left: 68px;
+        padding-bottom: 0;
+      }
+    }
 
     &::before {
       content: '';
@@ -19,9 +38,17 @@
       width: 54px;
       height: 2px;
       background: var(--accent-color);
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    @include tablet {
+      &:not(.section-title--center):before {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     @include tablet {

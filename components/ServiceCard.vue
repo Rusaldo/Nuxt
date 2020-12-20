@@ -47,7 +47,7 @@ export default {
     &__title {
       color: var(--primary-color);
       font-size: 24px;
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 18px;
     }
 

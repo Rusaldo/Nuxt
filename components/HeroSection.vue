@@ -9,7 +9,7 @@
         кредиты в банках
       </div>
       <div class="hero__description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa eligendi, labore quasi repellendus ullam voluptatem voluptates. Deleniti, distinctio, vel?
+        Одобрим кредит на любые цели за 1 день
       </div>
       <BaseButton class="hero__btn"
                   variant="accent"

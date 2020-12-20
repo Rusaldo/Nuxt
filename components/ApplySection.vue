@@ -1,6 +1,7 @@
 <template>
   <div class="section apply">
     <div class="container">
+      <SectionTitle center>Оформить заявку на кредит</SectionTitle>
       <ApplyForm class="apply__form" />
     </div>
   </div>
@@ -8,9 +9,11 @@
 
 <script>
 import ApplyForm from '~/components/form/ApplyForm.vue'
+import SectionTitle from '~/components/SectionTitle.vue'
 
 export default {
   components: {
+    SectionTitle,
     ApplyForm
   }
 }

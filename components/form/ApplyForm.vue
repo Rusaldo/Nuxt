@@ -4,8 +4,8 @@
         name="apply"
         data-netlify=true
         @submit.prevent="handleSubmit" >
-    <h2 class="apply-form__title">Оформить заявку на кредит</h2>
-    <p class="apply-form__text">Наш менеджер поможет ответить на все интересующие вопросы, а также подобрать оптимальный способ получения кредита именно в вашем случае</p>
+<!--    <h2 class="apply-form__title">Оформить заявку на кредит</h2>-->
+    <p class="apply-form__text">Наш менеджер поможет ответить на все интересующие вопросы</p>
     <div class="apply-form__form-wrapper">
       <div class="apply-form__field">
         <BaseInput v-model="name"
@@ -92,7 +92,7 @@ export default {
 
 <style lang="scss" scoped>
   .apply-form {
-    max-width: 500px;
+    max-width: 460px;
     text-align: center;
 
     &__title {
@@ -103,6 +103,7 @@ export default {
 
     &__text {
       margin-bottom: 30px;
+      font-size: 18px;
     }
 
     &__form-wrapper {
