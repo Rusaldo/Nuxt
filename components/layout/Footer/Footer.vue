@@ -11,19 +11,18 @@
 <!--        <FooterNav />-->
         <div class="footer__contacts">
           <address class="footer__contact">
-            <a class="footer__contact-link footer__contact-link--phone" href="tel:+79253292121">+7 (925) 329-2121</a>
+            <a class="footer__contact-link footer__contact-link--phone" href="tel:+74951350666">+7 (495) 135 0666</a>
             <br>
-            <a class="footer__contact-link" href="mailto:brocker@brocker.ru">brocker@brocker.ru</a>
+            <a class="footer__contact-link" href="mailto:contact@basiscredit.info">contact@basiscredit.info</a>
           </address>
           <address class="footer__contact">
-            Офис на планете Земля: <br>
-            Кремль, 1, Тверской район, Москва, 109012
+            г. Москва, ул. Большая Грузинская, д. 20, пом. 5, офис 4
           </address>
         </div>
       </div>
       <div class="footer__bottom">
         <p>
-          © ИП «Русалдо» 1997-2020. Кредитный и ипотечный брокер: помощь в получении кредита и ипотеки
+          © ООО «Базис Кредит» 2020-{{ new Date().getFullYear() }}. Кредитный и ипотечный брокер: помощь в получении кредита и ипотеки
         </p>
       </div>
     </div>
@@ -32,18 +31,12 @@
 
 <script>
   import Logo from '~/components/Logo.vue'
-  import FooterAbout from '~/components/FooterAbout.vue'
   import FooterNav from '~/components/FooterNav.vue'
-  import FooterContacts from '~/components/FooterContacts.vue'
-  import FooterBottom from '~/components/FooterBottom.vue'
 
   export default {
     components: {
       Logo,
-      FooterAbout,
-      FooterNav,
-      FooterContacts,
-      FooterBottom
+      FooterNav
     }
   }
 </script>
@@ -69,8 +62,14 @@
 
      @include desktop {
        padding-top: 120px;
-       grid-template-columns: 250px 1fr auto;
        gap: 60px;
+     }
+   }
+
+   &__contacts {
+     @include desktop {
+       margin-left: auto;
+       text-align: right;
      }
    }
 

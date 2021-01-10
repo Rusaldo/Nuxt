@@ -3,7 +3,7 @@
     <HeroSection />
     <ServicesSection />
     <FeaturesSection />
-    <HowMuchSection />
+<!--    <HowMuchSection />-->
     <ApplySection />
   </div>
 </template>

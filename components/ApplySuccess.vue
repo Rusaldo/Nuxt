@@ -6,6 +6,7 @@
 
 <style lang="scss" scoped>
   .apply-success {
+    color: #000;
     font-size: 20px;
     text-align: center;
   }

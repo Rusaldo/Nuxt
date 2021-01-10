@@ -38,7 +38,6 @@ export default {
       width: 100%;
       font-size: 16px;
       font-weight: 400;
-      border-radius: 4px;
       border: 2px solid var(--border-color);
       font-family: var(--default-font-family);
       padding: 0 18px;

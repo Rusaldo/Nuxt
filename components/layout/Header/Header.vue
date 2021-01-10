@@ -1,9 +1,9 @@
 <template>
   <header class="header">
     <div class="container header__container">
-      <Logo class="header__logo" />
+      <Logo class="header__logo" light />
 <!--      <NavBar class="header__navbar" />-->
-      <a class="header__phone" href="tel:79999990000">+7 999 999 0000</a>
+      <a class="header__phone" href="tel:+74951350666">+7 (495) 135 0666</a>
     </div>
   </header>
 </template>
@@ -26,6 +26,7 @@ export default {
     position: relative;
     z-index: 10;
     height: 61px;
+    background-color: #11141b;
 
     @include tablet {
       height: 84px;
@@ -40,8 +41,16 @@ export default {
   }
 
   .header__phone {
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--primary-color);
+    font-size: 16px;
+    color: #fff;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid currentColor;
+      margin-bottom: -1px;
+    }
   }
 </style>

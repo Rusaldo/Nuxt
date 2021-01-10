@@ -1,7 +1,7 @@
 <template>
   <section class="section section--bg-gray services">
     <div class="container">
-      <SectionTitle>Услуги</SectionTitle>
+      <SectionTitle>Наши услуги</SectionTitle>
 
       <ul class="services__list">
         <li class="services__card">

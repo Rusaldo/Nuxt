@@ -19,6 +19,18 @@
                    placeholder="Номер телефона" />
       </div>
       <div class="apply-form__field">
+        <BaseInput v-model="email"
+                   type="email"
+                   name="email"
+                   placeholder="Email" />
+      </div>
+      <div class="apply-form__field">
+        <BaseInput v-model="sum"
+                   type="number"
+                   name="sum"
+                   placeholder="Желаемая сумма, ₽" />
+      </div>
+      <div class="apply-form__field">
         <BaseButton variant="accent" native-type="submit" block>Отправить заявку</BaseButton>
       </div>
     </div>
@@ -49,7 +61,9 @@ export default {
   data() {
     return {
       name: '',
-      phone: ''
+      phone: '',
+      email: '',
+      sum: ''
     }
   },
 
