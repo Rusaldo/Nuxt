@@ -109,9 +109,11 @@ export default {
       position: relative;
       background: #fff;
       text-align: center;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(26,26,26,0.06), 0 2px 8px rgba(26,26,26,0.04);
 
       @include tablet {
-        padding: 42px 30px;
+        padding: 42px 18px;
       }
     }
 
