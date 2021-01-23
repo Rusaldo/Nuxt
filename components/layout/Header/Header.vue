@@ -1,9 +1,11 @@
 <template>
   <header class="header">
     <div class="container header__container">
-      <Logo class="header__logo" light />
+      <Logo class="header__logo" />
 <!--      <NavBar class="header__navbar" />-->
-      <a class="header__phone" href="tel:+74951350666">+7 (495) 135 0666</a>
+      <div>
+        <a class="header__phone" href="tel:+74951350666">+7 (495) 135 0666</a>
+      </div>
     </div>
   </header>
 </template>
@@ -26,7 +28,7 @@ export default {
     position: relative;
     z-index: 10;
     height: 61px;
-    background-color: #11141b;
+    background-color: white;
 
     @include tablet {
       height: 84px;
@@ -42,7 +44,6 @@ export default {
 
   .header__phone {
     font-size: 16px;
-    color: #fff;
 
     @include tablet {
       font-size: 20px;

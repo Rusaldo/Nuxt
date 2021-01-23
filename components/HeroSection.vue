@@ -1,15 +1,17 @@
 <template>
   <section class="section hero">
     <div class="container hero__container">
-      <div class="hero__sub-heading">
+      <!-- <div class="hero__sub-heading">
         Кредитный брокер
-      </div>
+      </div> -->
       <div class="hero__heading">
-        Помогаем получать <br>
-        кредиты в банках
+        Гарантированная помощь <br>
+        в получении кредита
       </div>
       <div class="hero__description">
-        Одобрим кредит на любые цели за 1 день
+        <div class="hero__feature">Одобрим заявку в день обращения</div>
+        <div class="hero__feature">Без поручителей и предоплат</div>
+        <div class="hero__feature">Только паспорт и СНИЛС</div>
       </div>
       <BaseButton class="hero__btn"
                   variant="accent"
@@ -52,14 +54,13 @@ export default {
     background-size: cover;
     display: flex;
     align-items: center;
-    text-align: center;
 
     @include tablet {
       text-align: left;
     }
 
     @include laptop {
-      height: 900px;
+      height: 700px;
     }
 
     &__container {
@@ -91,34 +92,46 @@ export default {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-
-        @include tablet {
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-        }
       }
 
       @include tablet {
         padding-left: 68px;
-        padding-bottom: 0;
         font-size: 18px;
       }
     }
 
     &__heading {
-      font-size: 29px;
+      font-size: 24px;
       margin-bottom: 30px;
-      font-weight: 800;
-      color: #000;
+      font-weight: 700;
+      color: var(--primary-color);
       line-height: 1.2;
+      position: relative;
+      padding-bottom: 24px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 54px;
+        height: 2px;
+        background: var(--accent-color);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include small-tablet {
+          display: none;
+        }
+      }
+
 
       @include tablet {
-        font-size: 50px;
+        color: black;
+        font-size: 40px;
       }
 
       @include desktop {
-        font-size: 65px;
+        font-size: 55px;
       }
     }
 
@@ -126,11 +139,35 @@ export default {
       color: #000;
       max-width: 500px;
       font-size: 18px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       line-height: 30px;
 
       @include tablet {
         margin-bottom: 50px;
+        font-size: 22px;
+      }
+    }
+
+    &__feature {
+      position: relative;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: var(--accent-color);
+        border-radius: 30px;
+        margin-bottom: 3px;
+        margin-right: 12px;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+
+      @include small-tablet {
+        width: auto;
       }
     }
   }

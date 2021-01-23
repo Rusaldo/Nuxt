@@ -4,9 +4,6 @@
       <div class="footer__top-container">
         <div class="footer__about">
           <Logo class="footer__logo" light />
-          <p>
-            Кредитный, ипотечный брокер: помощь в получении кредита и ипотеки
-          </p>
         </div>
 <!--        <FooterNav />-->
         <div class="footer__contacts">
@@ -22,7 +19,7 @@
       </div>
       <div class="footer__bottom">
         <p>
-          © ООО «Базис Кредит» 2020-{{ new Date().getFullYear() }}. Кредитный и ипотечный брокер: помощь в получении кредита и ипотеки
+          © ООО «Базис Кредит» 2020-{{ new Date().getFullYear() }}. Помощь в получении кредита на любые цели
         </p>
       </div>
     </div>
@@ -43,7 +40,8 @@
 
 <style lang="scss" scoped>
  .footer {
-   background-color: #11141b;
+   background-color: rgba(17, 20, 27, 0.95);
+  // background-color: #323439;
    color: #bdbdbd;
 
    &__top-container {

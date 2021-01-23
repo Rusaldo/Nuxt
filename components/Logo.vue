@@ -1,6 +1,6 @@
 <template>
   <nuxt-link class="logo" :class="{ 'logo--light': light }" to="/">
-    Базис Кредит
+    <span style="color: var(--accent-color);">Базис</span>&nbsp;Кредит
   </nuxt-link>
 </template>
 
@@ -19,12 +19,16 @@ export default {
   .logo {
     display: inline-flex;
     color: var(--secondary-color);
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     text-transform: capitalize;
 
     @include tablet {
-      font-size: 22px;
+      font-size: 24px;
+    }
+
+    @include desktop {
+      font-size: 30px;
     }
 
     /*&::after {*/

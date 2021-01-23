@@ -4,7 +4,7 @@
         class="apply-form"
         name="apply"
         @submit.prevent="handleSubmit" >
-    <p class="apply-form__text">Наш менеджер поможет ответить на все интересующие вопросы</p>
+    <p class="apply-form__text">Наш специалист свяжется с вами в ближайшее время</p>
     <div class="apply-form__form-wrapper">
       <div class="apply-form__field">
         <BaseInput v-model="name"
@@ -28,7 +28,7 @@
         <BaseInput v-model="sum"
                    type="number"
                    name="sum"
-                   placeholder="Желаемая сумма, ₽" />
+                   placeholder="Cумма кредита (руб.)" />
       </div>
       <div class="apply-form__field">
         <BaseButton variant="accent" native-type="submit" block>Отправить заявку</BaseButton>
@@ -108,7 +108,7 @@ export default {
 
 <style lang="scss" scoped>
   .apply-form {
-    max-width: 440px;
+    max-width: 450px;
     text-align: center;
     margin: 0 auto;
 
