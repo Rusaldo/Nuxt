@@ -1,9 +1,9 @@
 <template>
   <form ref="form"
+        action="/"
         class="apply-form"
         name="apply"
         @submit.prevent="handleSubmit" >
-<!--    <h2 class="apply-form__title">Оформить заявку на кредит</h2>-->
     <p class="apply-form__text">Наш менеджер поможет ответить на все интересующие вопросы</p>
     <div class="apply-form__form-wrapper">
       <div class="apply-form__field">
@@ -69,8 +69,6 @@ export default {
 
   methods: {
     handleSubmit() {
-      this.onSuccess()
-      return
       if (!this.validate()) return
       const form = this.$refs.form
       console.log(form)
