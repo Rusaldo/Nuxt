@@ -1,6 +1,5 @@
 <template>
   <form ref="form"
-        action="/"
         class="apply-form"
         data-netlify="true"
         name="apply"

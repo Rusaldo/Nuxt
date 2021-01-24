@@ -47,8 +47,8 @@ export default {
 
 <style lang="scss" scoped>
   .hero {
-    min-height: calc(100vh - 61px);
-    background-color: #f7f7f7;
+    min-height: calc(100vh - 130px);
+    background-color: #f7f7f7 ;
     background-image: url('/moscow-city-dark.jpg'),;
     background-repeat: no-repeat;
     background-position: center center;
