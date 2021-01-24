@@ -48,7 +48,8 @@ export default {
 <style lang="scss" scoped>
   .hero {
     min-height: calc(100vh - 61px);
-    background-image: url('/hero.jpg');
+    background-color: #f7f7f7;
+    background-image: url('/moscow-city-dark.jpg'),;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -108,6 +109,7 @@ export default {
       line-height: 1.2;
       position: relative;
       padding-bottom: 24px;
+      text-align: center;
 
       &::before {
         content: '';
@@ -126,8 +128,9 @@ export default {
 
 
       @include tablet {
-        color: black;
+        // color: black;
         font-size: 40px;
+        text-align: left;
       }
 
       @include desktop {

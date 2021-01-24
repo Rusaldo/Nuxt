@@ -4,7 +4,7 @@
       <SectionTitle>Наши преимущества</SectionTitle>
       <ul class="features__list">
         <li class="features__feature">
-          <IconPartners class="features__icon" />
+          <IconDeadline class="features__icon" />
           <h4 class="features__heading">Скорость</h4>
           <p class="features__description">Предоставим решение по кредиту за 1 день с минимальным пакетом документов</p>
         </li>
@@ -14,12 +14,12 @@
           <p class="features__description">Подберем для вас самое выгодное предложение на рынке среди более чем 50 банков партнеров</p>
         </li>
         <li class="features__feature">
-          <IconPartners class="features__icon" />
+          <IconChat class="features__icon" />
           <h4 class="features__heading">Удобство</h4>
           <p class="features__description">Мы предоставляем возможность провести сделку онлайн, что сэкономит вам время и деньги</p>
         </li>
         <li class="features__feature">
-          <IconPartners class="features__icon" />
+          <IconCertificate class="features__icon" />
           <h4 class="features__heading">Профессионализм</h4>
           <p class="features__description">Все наши специалисты имеют опыт работы от 3 лет в банковской сфере и являются профессионалами в своих областях</p>
         </li>
@@ -30,16 +30,18 @@
 
 <script>
 import SectionTitle from '~/components/SectionTitle.vue'
-import IconBanknote from '~/components/icons/IconBanknote'
-import IconPartners from '~/components/icons/IconPartners'
 import IconContract from '~/components/icons/IconContract'
+import IconDeadline from '~/components/icons/IconDeadline'
+import IconCertificate from '~/components/icons/IconCertificate'
+import IconChat from '~/components/icons/IconChat'
 
 export default {
   components: {
     SectionTitle,
-    IconBanknote,
-    IconPartners,
-    IconContract
+    IconContract,
+    IconDeadline,
+    IconCertificate,
+    IconChat
   }
 }
 </script>

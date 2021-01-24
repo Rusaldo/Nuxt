@@ -53,7 +53,7 @@
 
 
         <li class="services__card">
-          <IconDollar class="services__icon" />
+          <IconBuildings class="services__icon" />
           <h3 class="services__heading">
             Залоговое финансирование
           </h3>

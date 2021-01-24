@@ -2,6 +2,7 @@
   <form ref="form"
         action="/"
         class="apply-form"
+        data-netlify="true"
         name="apply"
         @submit.prevent="handleSubmit" >
     <p class="apply-form__text">Наш специалист свяжется с вами в ближайшее время</p>
@@ -36,7 +37,7 @@
     </div>
     <p class="apply-form__assent">
       Нажимая кнопку «Отправить заявку» вы принимаете <br>
-      условия передачи персональных данных.
+      <a href="/policy/">условия передачи персональных данных</a>.
     </p>
   </form>
 </template>
