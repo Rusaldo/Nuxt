@@ -1,33 +1,55 @@
 <template>
-  <div>
+  <div class="policy-page">
     <div class="section">
       <div class="container">
-        <p class="section__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium temporibus eveniet accusantium, neque omnis nihil earum dicta dolores itaque soluta excepturi aperiam expedita exercitationem ad est amet, odit ipsa aut iure a dolorum voluptatum! Commodi rerum neque, et illum dignissimos ea laborum, reprehenderit explicabo dicta aliquam maiores quisquam quod accusamus eveniet saepe minus tenetur eligendi vero expedita eius libero. Quam quae ducimus officia maiores laudantium harum quisquam omnis in obcaecati ipsum inventore reiciendis quos odio corrupti repellat sit nemo aspernatur voluptatum doloremque aliquam, molestias error illum hic. Delectus ipsum molestias nihil assumenda quasi praesentium perferendis ea ullam? Quam quae enim reiciendis et, fuga beatae fugit pariatur obcaecati officiis culpa cumque temporibus consequatur voluptates nemo ipsam, similique consectetur est corrupti. Doloremque harum fugit nemo possimus enim. Ducimus deserunt vel expedita aliquid architecto cupiditate dolorem dolor tempore sequi itaque eaque excepturi numquam, vero doloribus qui illo dolore atque ullam? Suscipit deleniti doloremque minima repellat ullam, adipisci quis expedita culpa recusandae aliquam odit, eos vel quos qui, quibusdam maiores. Laudantium dolorem id temporibus velit voluptatibus! Corporis hic laudantium exercitationem cumque, doloremque dolores minima incidunt, aliquid libero ut eligendi! Ratione neque aut unde est quibusdam iste! Autem perferendis consequuntur iure modi ullam, vitae repudiandae.
-        </p>
-        <p class="section__paragraph">
-        </p>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <p class="section__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut incidunt enim, ipsam nobis ullam necessitatibus veritatis quam consequatur est a architecto doloribus totam! Beatae ipsa libero velit aperiam magni odio ratione, nam temporibus ad quae nostrum fugiat ullam voluptates?
-        </p>
-        <p class="section__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, adipisci delectus. Quae repellendus eius sed autem assumenda nihil odio magni totam aliquid, aperiam ex facilis veritatis nam, iure illum adipisci beatae qui rerum eligendi cupiditate dolor ut eum tempore hic! Cum dicta adipisci, voluptatum tempore autem fuga quidem consequatur magni itaque debitis quas quibusdam, aspernatur iste eos quis iure sunt impedit aut. Natus nulla error, voluptatibus sunt optio magnam blanditiis.
-        </p>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <p class="section__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut incidunt enim, ipsam nobis ullam necessitatibus veritatis quam consequatur est a architecto doloribus totam! Beatae ipsa libero velit aperiam magni odio ratione, nam temporibus ad quae nostrum fugiat ullam voluptates?
-        </p>
-        <p class="section__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, adipisci delectus. Quae repellendus eius sed autem assumenda nihil odio magni totam aliquid, aperiam ex facilis veritatis nam, iure illum adipisci beatae qui rerum eligendi cupiditate dolor ut eum tempore hic! Cum dicta adipisci, voluptatum tempore autem fuga quidem consequatur magni itaque debitis quas quibusdam, aspernatur iste eos quis iure sunt impedit aut. Natus nulla error, voluptatibus sunt optio magnam blanditiis.
+        <h2>Согласие на обработку персональных данных</h2>
+        <p>Для подбора наиболее выгодного предложения ООО «Базис Кредит» (ИНН ‎9703021762, ОГРН ‎1207700435425), необходимо Ваше согласие на обработку Ваших персональных данных. Данные будут доступны только ООО «Базис Кредит».</p>
+        <p>Персональные данные – это информация, которая относится к Вам как к субъекту персональных данных, например: фамилия, имя, отчество, дата рождения, адрес, контакты и иные данные, предусмотренные Федеральным Законом №152 «О персональных данных»</p>
+        <p>При Вашем согласии на обработку персональных данных Вашим оператором будет ООО «Базис Кредит» (ИНН ‎9703021762, ОГРН ‎1207700435425).</p>
+        <p>Цель обработки персональных данных — оказание услуг по подбору для вас кредитного решения, а также возможность обратной связи с вами.</p>
+        <p>Вы имеете право любым способом изъявить ООО «Базис Кредит» свое желание об удалении ваших персональных данных из хранилищ компании.</p>
+        <p>Давая согласие на обработку ваших персональных и контактных данных, оставленных на данном сайте в качестве заявки на кредит или просьбы связаться с вами, вы подтверждаете, что:
+          <ul>
+            <li>Вы внимательно прочитали условия обработки ООО «Базис Кредит» ваших персональных данных и полностью с ними согласны;</li>
+            <li>все указанные вами данные принадлежат лично вам;</li>
+            <li>даете согласие ООО «Базис Кредит» на обработку ваших персональных данных, содержащихся в заполняемой форме заявки;</li>
+            <li>даете согласие на получение сервисной рассылки и уведомлений доступными средствами телефонной связи, SMS-сообщений и электронной почты (можете отписаться в любой момент в любой форме используя любой метод связи, обратившись в ООО «Базис Кредит»);</li>
+            <li>ознакомились с тем, что данное соглашение действует бессрочно и может быть отозвано путем отправки заявления в свободной форме на электронную почту contact@basiscredit.info с пометкой в теме «Отказ от сотрудничества».</li>
+          </ul>
         </p>
       </div>
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  .policy-page {
+    h2 {
+      font-size: 24px;
+      color: var(--primary-color);
+      margin-bottom: 18px;
+
+      @include tablet {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 18px;
+    }
+
+    li {
+      padding-left: 6px;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+</style>

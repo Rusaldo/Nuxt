@@ -57,6 +57,7 @@ export default {
     align-items: center;
 
     @include tablet {
+      min-height: calc(100vh - 61px);
       text-align: left;
     }
 

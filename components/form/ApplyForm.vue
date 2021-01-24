@@ -36,7 +36,7 @@
     </div>
     <p class="apply-form__assent">
       Нажимая кнопку «Отправить заявку» вы принимаете <br>
-      <a href="/policy/">условия передачи персональных данных</a>.
+      <nuxt-link class="apply-form__policy" to="/policy/">условия передачи персональных данных</nuxt-link>.
     </p>
   </form>
 </template>
@@ -146,6 +146,10 @@ export default {
       height: 1.2em;
       vertical-align: middle;
       margin-right: 6px;
+    }
+
+    &__policy {
+      text-decoration: underline;
     }
   }
 
