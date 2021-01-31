@@ -54,6 +54,11 @@
      @include tablet {
        grid-template-columns: 250px 1fr;
        grid-auto-rows: auto;
+       padding-top: 60px;
+       padding-bottom: 60px;
+     }
+
+     @include laptop {
        padding-top: 100px;
        padding-bottom: 100px;
      }

@@ -3,6 +3,7 @@
         class="apply-form"
         data-netlify="true"
         name="apply"
+        action="/success"
         @submit.prevent="handleSubmit" >
     <p class="apply-form__text">Наш специалист свяжется с вами в ближайшее время</p>
     <div class="apply-form__form-wrapper">
@@ -10,12 +11,14 @@
         <BaseInput v-model="name"
                    type="text"
                    name="name"
+                   required
                    placeholder="Имя" />
       </div>
       <div class="apply-form__field">
         <BaseInput v-model="phone"
                    type="tel"
                    name="phone"
+                   required
                    placeholder="Номер телефона" />
       </div>
       <div class="apply-form__field">
