@@ -42,6 +42,7 @@
     ul {
       list-style: disc;
       padding-left: 18px;
+      margin-top: 12px;
     }
 
     li {

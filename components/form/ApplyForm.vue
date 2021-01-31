@@ -68,12 +68,12 @@ export default {
   },
 
   methods: {
-    handleSubmit() {
+    handleSubmit(e) {
+      e.preventDefault()
       if (!this.validate()) return
+      console.log('Validaton passed')
       const form = this.$refs.form
-      console.log(form)
       const formData = new FormData(form)
-      console.log(formData)
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
